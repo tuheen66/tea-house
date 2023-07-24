@@ -44,6 +44,8 @@
               "gradient-end": "#F00",
               "gradient-top": "#F4F4F4",
               " gradient-bottom": "#F4F4F400",
+              "footer-grad-start": "#FED7AA",
+              "footer-grad-end": "#FFEDD5",
             },
           },
         },
@@ -226,7 +228,7 @@
       <!-- super client -->
       <section class="max-w-6xl mx-auto my-24">
         <div
-          class="flex rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end gap-12 flex-col md:flex-col lg:flex-row items-center"
+          class="flex mx-2 md:mx-8 rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end gap-12 flex-col md:flex-col lg:flex-row items-center"
         >
           <div class="flex-1 p-8 text-white">
             <h3 class="font-extrabold text-4xl mb-4">
@@ -239,18 +241,14 @@
               injected humour, or randomised words which don't look even
               slightly believable.
             </p>
-            <button
-              class="btn text-orange-600 rounded"
-            >
-              Show All
-            </button>
+            <button class="btn text-orange-600 rounded">Show All</button>
           </div>
 
           <!-- review container -->
-          <div class="relative flex-1 ml-20 py-20">
+          <div class="relative flex-1 ml-2 md:ml-20 py-20">
             <!-- next-review -->
             <div
-              class="opacity-40 space-y-2 w-96 relative mb-20 z-10 bg-white p-8"
+              class="opacity-40 space-y-2 w-96 relative rounded-xl mb-20 z-10 bg-white p-8"
             >
               <img
                 class="absolute -mt-16 -ml-16"
@@ -265,10 +263,13 @@
 
               <h4 class="tex-xl font-bold">Ilham Yuda</h4>
               <p class="text-base text-[#777]">Business</p>
+              <div class="flex justify-end">
+                <img src="./images/circle.png" alt="" />
+              </div>
             </div>
             <!-- current-review -->
             <div
-              class="space-y-2 absolute -mt-32 -ml-20 z-20 w-96 bg-white p-8"
+              class="space-y-2 absolute rounded-xl ml-0 -mt-32 md:-ml-20 z-20 w-96 bg-white p-8"
             >
               <img
                 class="absolute -mt-16 -ml-16"
@@ -283,9 +284,14 @@
 
               <h4 class="tex-xl font-bold">Ilham Yuda</h4>
               <p class="text-base text-[#777]">Business</p>
+              <div class="flex justify-end">
+                <img src="./images/circle.png" alt="" />
+              </div>
             </div>
             <!-- previous-review -->
-            <div class="opacity-40 space-y-2 w-96 relative z-10 bg-white p-8">
+            <div
+              class="opacity-40 space-y-2 w-96 relative rounded-xl z-10 bg-white p-8"
+            >
               <img
                 class="absolute -mt-16 -ml-16"
                 src="./images/client.png"
@@ -299,10 +305,145 @@
 
               <h4 class="tex-xl font-bold">Ilham Yuda</h4>
               <p class="text-base text-[#777]">Business</p>
+              <div class="flex justify-end">
+                <img src="./images/circle.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- news and events -->
+      <section class="max-w-6xl mx-auto my-24">
+        <div class="text-center">
+          <h3 class="font-extrabold text-4xl mb-4">News & Events</h3>
+          <p class="max-w-3xl mx-auto">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <!-- grid container -->
+        <div
+          class="mt-8 mx-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- card -->
+          <div class="card border-2 border-gray-200 bg-base-100 pt-8">
+            <figure><img src="/images/news-1.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <p class="text-[#777] text-sm">Feb 05, 2027</p>
+              <h4 class="font-bold text-lg">
+                Collecting 8 points for <br />
+                discount
+              </h4>
+              <p class="text-[#777]">Collecting 8 points for discount</p>
+              <p class="font-bold">Learn More</p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card border-2 border-gray-200 bg-base-100 pt-8">
+            <figure><img src="/images/news-2.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <p class="text-[#777] text-sm">Feb 05, 2027</p>
+              <h4 class="font-bold text-lg">
+                Collecting 8 points for <br />
+                discount
+              </h4>
+              <p class="text-[#777]">Collecting 8 points for discount</p>
+              <p class="font-bold">Learn More</p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card border-2 border-gray-200 bg-base-100 pt-8">
+            <figure><img src="/images/news-3.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <p class="text-[#777] text-sm">Feb 05, 2027</p>
+              <h4 class="font-bold text-lg">
+                Collecting 8 points for <br />
+                discount
+              </h4>
+              <p class="text-[#777]">Collecting 8 points for discount</p>
+              <p class="font-bold">Learn More</p>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer
+      class="py-20 my-20 bg-gradient-to-r from-footer-grad-start to-footer-grad-end"
+    >
+      <!-- top row -->
+      <div
+        class="max-w-6xl md:mx-16 mx-8 lg:mx-auto flex justify-between mb-20"
+      >
+        <img class="" src="./images/cup.png" alt="" />
+        <div class="flex items-center lg:mr-8">
+          <p>Ready to get started?</p>
+          <button
+            class="lg:ml-8 btn bg-gradient-to-r from-gradient-start to-gradient-end rounded text-white"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <!-- middle row - grid container -->
+      <div
+        class="max-w-6xl gap-y-4 mx-8 md:ml-24 lg:mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4"
+      >
+        <!-- first column -->
+        <div class="list-none space-y-4">
+          <h4 class="text-lg font-bold">Quick Links</h4>
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Insurance</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </div>
+
+        <!-- second column -->
+        <div class="list-none space-y-4">
+          <h4 class="text-lg font-bold">Our Services</h4>
+          <li><a href="">Life Insurance</a></li>
+          <li><a href="">Car Insurance</a></li>
+          <li><a href="">Health Insurance</a></li>
+          <li><a href="">House Insurance</a></li>
+        </div>
+
+        <!-- third column -->
+        <div class="list-none mt-8 space-y-4">
+          <h4 class="text-lg font-bold">Help</h4>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Contact Us</a></li>
+        </div>
+        <!-- fourth column -->
+        <div class="mt-8">
+          <h3 class="text-lg font-bold">
+            Subscribe to our <br />
+            newsletter
+          </h3>
+          <div class="flex my-8">
+            <input
+              class="pb-4 border-b-2 border-gray-400 bg-transparent outline-none"
+              type="email"
+              placeholder="Email address"
+            />
+            <i
+              class="fa-solid fa-chevron-right -ml-8 md:ml-0 rounded-full p-4 bg-orange-600 text-white"
+            ></i>
+          </div>
+          <div>
+            <i class="mr-8 text-xl fa-brands fa-facebook-f"></i>
+            <i class="mr-8 text-xl fa-brands fa-twitter"></i>
+            <i class="mr-8 text-xl fa-brands fa-square-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center mt-12">
+        &copy 2027 UIDesign to - All Rights Reserved
+      </p>
+    </footer>
   </body>
 </html>
